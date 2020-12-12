@@ -2,6 +2,7 @@ baseurl = "https://marthinpsrb.github.io/"
 languageCode = "en-us"
 title = "Marthin Satrya Pasaribu"
 theme = "hugo-coder-master"
+defaultContentLanguage = "en"
 
 [params]
     author = "Marthin Satrya Pasaribu"
@@ -15,9 +16,9 @@ theme = "hugo-coder-master"
     dateFormat = "January 2, 2006"
 
     hideFooter = false
-    hideCredits = false
+    hideCredits = true
     hideCopyright = false
-    since = 2019
+    since = 2020
 
     # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://github.com/luizdepra/hugo-coder/tree/"

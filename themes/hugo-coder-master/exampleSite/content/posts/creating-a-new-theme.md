@@ -679,7 +679,7 @@ $ vi themes/zafta/layouts/index.html
   {{ end }}
 </body>
 </html>
-:wq
+
 
 $
 ```

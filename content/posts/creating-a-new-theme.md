@@ -5,7 +5,7 @@ slug = "creating-a-new-theme"
 tags = []
 categories = []
 series = ["Theme", "Hugo"]
-authors = ["John Doe"]
+authors = ["Marthin Satrya Pasaribu"]
 +++
 
 ## Introduction
