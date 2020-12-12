@@ -1,4 +1,4 @@
-baseURL = "https://marthinpsrb.github.io"
+baseURL = "/"
 languageCode = "en-us"
 title = "Marthin Satrya Pasaribu"
 theme = "hugo-coder-master"
