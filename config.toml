@@ -5,7 +5,7 @@ theme = "hugo-coder-master"
 
 [params]
     author = "Marthin Satrya Pasaribu"
-    description = "'s personal website"
+    description = "Marthin's personal website"
     keywords = "blog,developer,personal"
     info = "Full Stack, Mobile Engineer and Startup Enthusiast"
     avatarURL = "images/marthinpsrb-08.png"
