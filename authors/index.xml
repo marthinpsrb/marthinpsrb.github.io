@@ -2,53 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Marthin Satrya Pasaribu</title>
-    <link>https://marthinpsrb.github.io/authors/</link>
+    <link>https://marthinpsrb.com/authors/</link>
     <description>Recent content in Authors on Marthin Satrya Pasaribu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://marthinpsrb.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://marthinpsrb.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>External link test</title>
-      <link>https://marthinpsrb.github.io/authors/external-link-test/</link>
+      <link>https://marthinpsrb.com/authors/external-link-test/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.github.io/authors/external-link-test/</guid>
+      <guid>https://marthinpsrb.com/authors/external-link-test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Translation test</title>
-      <link>https://marthinpsrb.github.io/authors/translation-test/</link>
+      <link>https://marthinpsrb.com/authors/translation-test/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.github.io/authors/translation-test/</guid>
+      <guid>https://marthinpsrb.com/authors/translation-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>marthinpsrb</title>
+      <link>https://marthinpsrb.com/authors/marthinpsrb/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://marthinpsrb.com/authors/marthinpsrb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jane Smith</title>
-      <link>https://marthinpsrb.github.io/authors/jane-smith/</link>
+      <link>https://marthinpsrb.com/authors/jane-smith/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.github.io/authors/jane-smith/</guid>
+      <guid>https://marthinpsrb.com/authors/jane-smith/</guid>
       <description></description>
     </item>
     
     <item>
       <title>John Doe</title>
-      <link>https://marthinpsrb.github.io/authors/john-doe/</link>
+      <link>https://marthinpsrb.com/authors/john-doe/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.github.io/authors/john-doe/</guid>
+      <guid>https://marthinpsrb.com/authors/john-doe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Marthin Satrya Pasaribu</title>
-      <link>https://marthinpsrb.github.io/authors/marthin-satrya-pasaribu/</link>
+      <link>https://marthinpsrb.com/authors/marthin-satrya-pasaribu/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.github.io/authors/marthin-satrya-pasaribu/</guid>
+      <guid>https://marthinpsrb.com/authors/marthin-satrya-pasaribu/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>general on Marthin Satrya Pasaribu</title>
+    <link>https://marthinpsrb.com/categories/general/</link>
+    <description>Recent content in general on Marthin Satrya Pasaribu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://marthinpsrb.com/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction Blog</title>
+      <link>https://marthinpsrb.com/posts/first-post/</link>
+      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://marthinpsrb.com/posts/first-post/</guid>
+      <description>This is my first post in this blog. So i would like to thank you for people who give advise to me. Nice to meet you in this blog and enjoy my story. Bye the way my name is Marthin Satrya Pasaribu, and i from Computer science background.
+In this blog, may be i will post about startup and Software Technology, I will share about my experience in startup “You don’t need much money to give something to others but you just need desire and sincerity” — MSP.</description>
+    </item>
+    
+  </channel>
+</rss>
