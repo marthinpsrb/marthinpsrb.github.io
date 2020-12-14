@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>External link test on Marthin Satrya Pasaribu</title>
-    <link>https://marthinpsrb.com/authors/external-link-test/</link>
+    <link>http://marthinpsrb.com/authors/external-link-test/</link>
     <description>Recent content in External link test on Marthin Satrya Pasaribu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://marthinpsrb.com/authors/external-link-test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://marthinpsrb.com/authors/external-link-test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo coder wiki</title>
-      <link>https://marthinpsrb.com/posts/hugo-coder-wiki/</link>
+      <link>http://marthinpsrb.com/posts/hugo-coder-wiki/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.com/posts/hugo-coder-wiki/</guid>
+      <guid>http://marthinpsrb.com/posts/hugo-coder-wiki/</guid>
       <description></description>
     </item>
     

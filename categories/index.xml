@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Marthin Satrya Pasaribu</title>
-    <link>https://marthinpsrb.com/categories/</link>
+    <link>http://marthinpsrb.com/categories/</link>
     <description>Recent content in Categories on Marthin Satrya Pasaribu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://marthinpsrb.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://marthinpsrb.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Development</title>
-      <link>https://marthinpsrb.com/categories/development/</link>
+      <link>http://marthinpsrb.com/categories/development/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.com/categories/development/</guid>
+      <guid>http://marthinpsrb.com/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://marthinpsrb.com/categories/blog/</link>
+      <link>http://marthinpsrb.com/categories/blog/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.com/categories/blog/</guid>
+      <guid>http://marthinpsrb.com/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>startup</title>
-      <link>https://marthinpsrb.com/categories/startup/</link>
+      <link>http://marthinpsrb.com/categories/startup/</link>
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.com/categories/startup/</guid>
+      <guid>http://marthinpsrb.com/categories/startup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>general</title>
-      <link>https://marthinpsrb.com/categories/general/</link>
+      <link>http://marthinpsrb.com/categories/general/</link>
       <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.com/categories/general/</guid>
+      <guid>http://marthinpsrb.com/categories/general/</guid>
       <description></description>
     </item>
     
     <item>
       <title>motivation</title>
-      <link>https://marthinpsrb.com/categories/motivation/</link>
+      <link>http://marthinpsrb.com/categories/motivation/</link>
       <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.com/categories/motivation/</guid>
+      <guid>http://marthinpsrb.com/categories/motivation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>https://marthinpsrb.com/categories/golang/</link>
+      <link>http://marthinpsrb.com/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://marthinpsrb.com/categories/golang/</guid>
+      <guid>http://marthinpsrb.com/categories/golang/</guid>
       <description></description>
     </item>
     
