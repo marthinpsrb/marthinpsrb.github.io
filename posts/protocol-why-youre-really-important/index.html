@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Marthin Satrya Pasaribu">
+    <meta name="description" content="This is only short blog, why we need protocol(Swift) – Interface(Java). It’s just come to my mind suddenly:
+First what’s the protocol in Swift?
+ A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality
+  Source: https://docs.swift.org/swift-book/LanguageGuide/Protocols.html
+ Second thing:
+Why we need you Protocol, What are you doing so we can’t work without you?
+To answer this question, I find one example that I think it can describe why we need protocol.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Protocol Why you’re important??"/>
+<meta name="twitter:description" content="This is only short blog, why we need protocol(Swift) – Interface(Java). It’s just come to my mind suddenly:
+First what’s the protocol in Swift?
+ A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality
+  Source: https://docs.swift.org/swift-book/LanguageGuide/Protocols.html
+ Second thing:
+Why we need you Protocol, What are you doing so we can’t work without you?
+To answer this question, I find one example that I think it can describe why we need protocol."/>
+
+    <meta property="og:title" content="Protocol Why you’re important??" />
+<meta property="og:description" content="This is only short blog, why we need protocol(Swift) – Interface(Java). It’s just come to my mind suddenly:
+First what’s the protocol in Swift?
+ A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality
+  Source: https://docs.swift.org/swift-book/LanguageGuide/Protocols.html
+ Second thing:
+Why we need you Protocol, What are you doing so we can’t work without you?
+To answer this question, I find one example that I think it can describe why we need protocol." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://marthinpsrb.com/posts/protocol-why-youre-really-important/" />
+<meta property="article:published_time" content="2020-02-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-06T00:00:00+00:00" />
+
+
+    <title>
+  Protocol Why you’re important?? · Marthin Satrya Pasaribu
+</title>
+
+    
+      <link rel="canonical" href="http://marthinpsrb.com/posts/protocol-why-youre-really-important/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha512-9QjPqX/aCNwEQDyMqqMluNOSsHxTwOJNO3d4m5aUeNbyOPm8RcBA5hCUhvGmKFtSmQYGajqPopGtD60FWiWUwg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/twemoji.min.js" integrity="sha512-panBjUGuKarjg0qxHggQULmRf9jB/YVCy238hmzBWUuLeOuwMSuJgJcUv3T+rwXUBZ9zeUvc49ZcCRH+EO0H8g==" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.79.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Marthin Satrya Pasaribu
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Protocol Why you’re important??</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2020-02-06T00:00:00Z'>
+                February 6, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/marthinpsrb/">marthinpsrb</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/swift/">swift</a>
+      <span class="separator">•</span>
+    <a href="/categories/ios/">iOS</a>
+      <span class="separator">•</span>
+    <a href="/categories/technology/">technology</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>This is only short blog, why we need protocol(Swift) – Interface(Java).
+It’s just come to my mind suddenly:</p>
+<p><strong>First what’s the protocol in Swift?</strong></p>
+<blockquote>
+<p>A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality</p>
+</blockquote>
+<blockquote>
+<p>Source: <a href="https://docs.swift.org/swift-book/LanguageGuide/Protocols.html">https://docs.swift.org/swift-book/LanguageGuide/Protocols.html</a></p>
+</blockquote>
+<p><strong>Second thing:</strong></p>
+<p>Why we need you <code>Protocol</code>, What are you doing so we can’t work without you?</p>
+<p>To answer this question, I find one example that I think it can describe why we need protocol. From the above explanation, you know protocol defines a blueprint of methods, properties and other requirements it can be part of a task or piece of functionality. Now, let’s took an example: If you have an office and you’re a boss, and you already have one right-hand man as your secretary. After 1 year, he works with you and decides to resign because of something that he/she can not tell you. You’re really close with him and want to find others man can replace him as secretary. Do you think, You can find exactly same face, same attitude, the same quality of work, and the same everything with your ex-secretary? It will be hard right? And of course, it’s impossible. You only can find same attitude maybe, same quality of work so you can replace him. That’s the only solution you have.</p>
+<p>So, this is how protocol work. You can define what ever function, attributes that you need for your requirement. And class (on real case People) that conform to your requirement(protocol) can replace the position that you need.</p>
+<p>See, Most of programming problem it solved because of the real case in this world.</p>
+<p>On Swift programming protocol also help you to make better Unit Test like mock, stub etc. To replace the original class in implementation.</p>
+<p>That’s it, I hope it can make you clear definition why we need protocol. 😀</p>
+<p>Thank you</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p><b>You can't Satisfy Everyone</b></p>
+      
+      
+        ©
+        
+        2020
+         Marthin Satrya Pasaribu 
+      
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Marthin Satrya Pasaribu">
+    <meta name="description" content="Easy Development or Easy Maintenance?
+The trade-off is extendibility and maintenance. While the code for parsing a “real” language may be harder to write, it will be much easier for people to understand, and to extend in the future with new features and functionality. Building Your Portfolio
+How Accurate Is Accurate Enough?
+To some extent(tingkat), all answers are estimates.
+t’s just that some are more accurate than others. So the first question you have to ask yourself when someone asks you for an estimate is the context in which your answer will be taken.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pragmatic Programming Notes (Part 4)"/>
+<meta name="twitter:description" content="Easy Development or Easy Maintenance?
+The trade-off is extendibility and maintenance. While the code for parsing a “real” language may be harder to write, it will be much easier for people to understand, and to extend in the future with new features and functionality. Building Your Portfolio
+How Accurate Is Accurate Enough?
+To some extent(tingkat), all answers are estimates.
+t’s just that some are more accurate than others. So the first question you have to ask yourself when someone asks you for an estimate is the context in which your answer will be taken."/>
+
+    <meta property="og:title" content="Pragmatic Programming Notes (Part 4)" />
+<meta property="og:description" content="Easy Development or Easy Maintenance?
+The trade-off is extendibility and maintenance. While the code for parsing a “real” language may be harder to write, it will be much easier for people to understand, and to extend in the future with new features and functionality. Building Your Portfolio
+How Accurate Is Accurate Enough?
+To some extent(tingkat), all answers are estimates.
+t’s just that some are more accurate than others. So the first question you have to ask yourself when someone asks you for an estimate is the context in which your answer will be taken." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://marthinpsrb.com/posts/pragmatic-programming-notes-part-4/" />
+<meta property="article:published_time" content="2019-01-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-01-16T00:00:00+00:00" />
+
+
+    <title>
+  Pragmatic Programming Notes (Part 4) · Marthin Satrya Pasaribu
+</title>
+
+    
+      <link rel="canonical" href="http://marthinpsrb.com/posts/pragmatic-programming-notes-part-4/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha512-9QjPqX/aCNwEQDyMqqMluNOSsHxTwOJNO3d4m5aUeNbyOPm8RcBA5hCUhvGmKFtSmQYGajqPopGtD60FWiWUwg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/twemoji.min.js" integrity="sha512-panBjUGuKarjg0qxHggQULmRf9jB/YVCy238hmzBWUuLeOuwMSuJgJcUv3T+rwXUBZ9zeUvc49ZcCRH+EO0H8g==" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.79.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Marthin Satrya Pasaribu
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Pragmatic Programming Notes (Part 4)</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2019-01-16T00:00:00Z'>
+                January 16, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/marthinpsrb/">marthinpsrb</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/technology/">technology</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p><strong>Easy Development or Easy Maintenance?</strong></p>
+<p>The trade-off is extendibility and maintenance. While the code for parsing a “real” language may be harder to write, it will be much easier for people to understand, and to extend in the future with new features and functionality.
+Building Your Portfolio</p>
+<p><strong>How Accurate Is Accurate Enough?</strong></p>
+<p>To some extent(tingkat), all answers are estimates.</p>
+<p>t’s just that some are more accurate than others. So the first question you have to ask yourself when someone asks you for an estimate is the context in which your answer will be taken. Do they need high accuracy, or are they looking for a ballpark(rata-rata) figure?</p>
+<p>What’s the value of p? If you’re wondering how much edging to buy to put around a circular flower bed, then “3”is probably good enough. If you’re in school, then maybe “22/7” is a good approximation. If you’re in NASA, then maybe 12 decimal places will do.</p>
+<h4 id="the-power-of-plain-text">The Power of Plain Text</h4>
+<p>Plain text is made up of printable characters in a form that can be read and understood directly by people. For example, although the following snippet is made up of printable characters, it is meaningless.</p>
+<pre><code>Fieldl9=467abe
+</code></pre><p><strong>Keep Knowledge in Plain Text</strong></p>
+<p>For instance, suppose you have a production deployment of a large application with a complex site-specific configuration file (sendmail comes to mind). If this file is in plain text, you could place it under a source code control system</p>
+<h3 id="debugging">Debugging</h3>
+<p>The word bug has been used to describe an “object of terror” ever since the fourteenth century</p>
+<p>Regrettably, we still have “bugs” in the system, albeit not the flying kind. No one writes perfect software, so it’s a given that debugging will take up a major portion of your day. Let’s look at some of the issues involved in debugging and some general strategies for finding elusive bugs.</p>
+<p>Debugging itself is a sensitive, emotional subject for many developers. Instead of attacking it as a puzzle to be solved, you may encounter denial, finger pointing, lame excuses, or just plain apathy.</p>
+<p>Embrace the fact that debugging is just problem solving, and attack it as such.</p>
+<p>Fix the Problem, Not the Blame, The easiest person to deceive is one’s self</p>
+<p>Before you start debugging, it’s important to adopt the <code>right mindset</code>. You need to <code>turn off</code> many of the <code>defenses</code> you use each day to <code>protect your ego</code>, <code>tune out</code> any <code>project pressures</code> you may be under, and <code>get yourself comfortable</code>. Above all, remember the first rule of debugging:</p>
+<ul>
+<li>Don’t Panic</li>
+<li>Where To start
+Before you start to look at the bug, make sure that you are working on code that compiled cleanly—without warnings. When trying to solve any problem, you need to gather all the relevant data. Unfortunately, bug reporting isn’t an exact science. Accuracy in bug reports is further diminished when they come through a third party—you may actually need to watch the user who reported the bug in action to get a sufficient level of detail.</li>
+</ul>
+<p><strong>Important notes:</strong></p>
+<ul>
+<li>
+<p>You may need to interview the user who reported the bug in order to gather more data than you were initially given</p>
+</li>
+<li>
+<p>Artificial tests (such as the programmer’s single brush stroke from bottom to top) don’t exercise enough of an application. You must brutally test both boundary conditions and realistic end-user usage patterns. You need to do this systematically</p>
+</li>
+<li>
+<p>Debugging Strategies
+The best way to start fixing a bug is to make it reproducible. After all, if you can’t reproduce it, how will you know if it is ever fixed?</p>
+</li>
+<li>
+<p>Tracing
+Tracing statements are those little diagnostic messages you print to the screen or to a file that say things such as “got here” and “value of x = 2.” For instance, if you needed to track down a resource leak (such as unbalanced file opens/closes), you could trace each open and each close in a log file</p>
+</li>
+<li>
+<p>Process of Elimination
+We worked on a project where a senior engineer was convinced that the select system call was broken on Solaris. No amount of persuasion or logic could change his mind (the fact that every other networking application on the box worked fine was irrelevant). He spent weeks writing work-arounds, which, for some odd reason, didn’t seem to fix the problem. When finally forced to sit down and read the documentation on select, he discovered the problem and corrected it in a matter of minutes. We now use the phrase “select is broken” as a gentle reminder whenever one of us starts blaming the system for a fault that is likely to be our own.</p>
+</li>
+<li>
+<p><code>select</code> Isn’t Broken
+Don’t gloss over a routine or piece of code involved in the bug because you “know” it works. Prove it. Prove it in this context, with this data, with these boundary conditions.</p>
+</li>
+<li>
+<p>Don’t Assume It—Prove It
+If it took a long time to fix this bug, ask yourself why. Is there anything you can do to make fixing this bug easier the next time around? Perhaps you could build in better testing hooks, or write a log file analyzer. Finally, if the bug is the result of someone’s wrong assumption, discuss the problem with the whole team: if one person misunderstands, then it’s possible many people do.</p>
+</li>
+</ul>
+<p><strong>Learn a Text Manipulation Language</strong></p>
+<p>Pragmatic Programmers manipulate text the same way woodworkers shape wood. In previous sections we discussed some specific tools—shells, editors, debuggers—that we use. These are similar to a wood-worker’s chisels, saws, and planes—tools specialized to do one or two jobs well. However, every now and then we need to perform some transformation not readily handled by the basic tool set. We need a general-purpose text manipulation tool.
+To show the wide-ranging applicability of text manipulation languages, here’s a sample of some applications we’ve developed over the last few years.</p>
+<ol>
+<li>Database schema maintenance</li>
+<li>Java property access.</li>
+<li>Test data generation</li>
+<li>Book writing</li>
+<li>C to Object Pascal interface</li>
+<li>Generating Web documentatio</li>
+</ol>
+<p>We need to repeat information in different places. Sometimes we just need to protect ourselves from carpal tunnel syndrome by cutting down on repetitive typing.</p>
+<p><strong>Write Code That Writes Code</strong></p>
+<p>There are 2 types of code generator:</p>
+<ol>
+<li>Passive code generators are run once to produce a result. From that point forward, the result becomes freestanding—it is divorced from the code generator. The wizards discussed in Evil Wizards, along with some CASE tools, are examples of passive code generators.</li>
+<li>Active code generators are used each time their results are required. The result is a throw-away—it can always be reproduced by the code generator. Often, active code generators read some form of script or control file to produce their results.</li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p><b>You can't Satisfy Everyone</b></p>
+      
+      
+        ©
+        
+        2020
+         Marthin Satrya Pasaribu 
+      
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

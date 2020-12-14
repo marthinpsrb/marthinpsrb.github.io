@@ -6,29 +6,11 @@
     <description>Recent content in Categories on Marthin Satrya Pasaribu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://marthinpsrb.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Development</title>
-      <link>http://marthinpsrb.com/categories/development/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://marthinpsrb.com/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blog</title>
-      <link>http://marthinpsrb.com/categories/blog/</link>
-      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://marthinpsrb.com/categories/blog/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://marthinpsrb.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux</title>
       <link>http://marthinpsrb.com/categories/linux/</link>
-      <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>http://marthinpsrb.com/categories/linux/</guid>
       <description></description>
@@ -37,9 +19,45 @@
     <item>
       <title>technology</title>
       <link>http://marthinpsrb.com/categories/technology/</link>
-      <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>http://marthinpsrb.com/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>http://marthinpsrb.com/categories/ios/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://marthinpsrb.com/categories/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>swift</title>
+      <link>http://marthinpsrb.com/categories/swift/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://marthinpsrb.com/categories/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>general</title>
+      <link>http://marthinpsrb.com/categories/general/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://marthinpsrb.com/categories/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>http://marthinpsrb.com/categories/ubuntu/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://marthinpsrb.com/categories/ubuntu/</guid>
       <description></description>
     </item>
     
@@ -53,29 +71,11 @@
     </item>
     
     <item>
-      <title>general</title>
-      <link>http://marthinpsrb.com/categories/general/</link>
-      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://marthinpsrb.com/categories/general/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>motivation</title>
       <link>http://marthinpsrb.com/categories/motivation/</link>
       <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>http://marthinpsrb.com/categories/motivation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>http://marthinpsrb.com/categories/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://marthinpsrb.com/categories/golang/</guid>
       <description></description>
     </item>
     

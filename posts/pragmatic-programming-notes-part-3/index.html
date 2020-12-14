@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Marthin Satrya Pasaribu">
+    <meta name="description" content="Knowledge isn’t stable. It changes—often rapidly. Your understanding of a requirement may change following a meeting with the client. All this instability means that we spend a large part of our time in maintenance mode, reorganizing and reexpressing the knowledge in our systems.
+  Maintenance is not a discrete activity, but a routine part of the entire development process.
+  The alternative is to have the same thing expressed in two or more places.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pragmatic Programming Notes (Part 3)"/>
+<meta name="twitter:description" content="Knowledge isn’t stable. It changes—often rapidly. Your understanding of a requirement may change following a meeting with the client. All this instability means that we spend a large part of our time in maintenance mode, reorganizing and reexpressing the knowledge in our systems.
+  Maintenance is not a discrete activity, but a routine part of the entire development process.
+  The alternative is to have the same thing expressed in two or more places."/>
+
+    <meta property="og:title" content="Pragmatic Programming Notes (Part 3)" />
+<meta property="og:description" content="Knowledge isn’t stable. It changes—often rapidly. Your understanding of a requirement may change following a meeting with the client. All this instability means that we spend a large part of our time in maintenance mode, reorganizing and reexpressing the knowledge in our systems.
+  Maintenance is not a discrete activity, but a routine part of the entire development process.
+  The alternative is to have the same thing expressed in two or more places." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://marthinpsrb.com/posts/pragmatic-programming-notes-part-3/" />
+<meta property="article:published_time" content="2019-01-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-01-22T00:00:00+00:00" />
+
+
+    <title>
+  Pragmatic Programming Notes (Part 3) · Marthin Satrya Pasaribu
+</title>
+
+    
+      <link rel="canonical" href="http://marthinpsrb.com/posts/pragmatic-programming-notes-part-3/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha512-9QjPqX/aCNwEQDyMqqMluNOSsHxTwOJNO3d4m5aUeNbyOPm8RcBA5hCUhvGmKFtSmQYGajqPopGtD60FWiWUwg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/twemoji.min.js" integrity="sha512-panBjUGuKarjg0qxHggQULmRf9jB/YVCy238hmzBWUuLeOuwMSuJgJcUv3T+rwXUBZ9zeUvc49ZcCRH+EO0H8g==" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.79.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Marthin Satrya Pasaribu
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Pragmatic Programming Notes (Part 3)</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2019-01-22T00:00:00Z'>
+                January 22, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/marthinpsrb/">marthinpsrb</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/technology/">technology</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <ul>
+<li>
+<p>Knowledge isn’t stable. It changes—often rapidly. Your understanding of a requirement may change following a meeting with the client. All this instability means that we spend a large part of our time in maintenance mode, reorganizing and reexpressing the knowledge in our systems.</p>
+</li>
+<li>
+<p>Maintenance is not a discrete activity, but a routine part of the entire development process.</p>
+</li>
+<li>
+<p>The alternative is to have the same thing expressed in two or more places. If you change one, you have to remember to change the others,</p>
+</li>
+<li>
+<p>The DRY principle tells us to keep the low-level knowledge in the code, where it belongs, and reserve the comments for other, high-level explanations</p>
+</li>
+<li>
+<p>What you’re trying to do is foster an environment where it’s easier to find and reuse existing stuff than to write it yourself. If it isn’t easy, people won’t do it. And if you fail to reuse, you risk duplicating knowledge.</p>
+</li>
+<li>
+<p>Orthogonality is a critical concept if you want to produce systems that are easy to design, build, test, and extend.</p>
+</li>
+<li>
+<p>a well-designed system, the database code will be orthogonal to the user interface: you can change the interface without affecting the database, and swap databases without changing the interface.</p>
+</li>
+<li>
+<p>Your workload is phenomenal: your hands and feet are constantly moving, trying to balance all the interacting forces.</p>
+</li>
+<li>
+<p>there is no need to keep changing existing code as you add new code.</p>
+</li>
+<li>
+<p>An orthogonal approach also promotes reuse. If components have specific, well-defined responsibilities, they can be combined with new components in ways that were not envisioned by their original implementors. The more loosely coupled your systems, the easier they are to reconfigure and reengineer.</p>
+</li>
+<li>
+<p>How do you organize teams into groups with well-defined responsibilities and minimal overlap? There’s no simple answer. It depends partly on the project and your analysis of the areas of potential change. It also depends on the people you have available</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">Our preference is to start by separating infrastructure from application.
+Each major infrastructure component (database, communications interface,
+middleware layer, and so on) gets its own subteam.
+</code></pre></div><ul>
+<li>
+<p>Each obvious division of application functionality is similarly divided. Then we look at the people we have (or plan to have) and adjust the groupings accordingly.</p>
+</li>
+<li>
+<p>Once you have your components mapped out, ask yourself: If I dramatically change the requirements behind a particular function, how many modules are affected? In an orthogonal system, the answer should be”one.”</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">Orthogonality means that operations change just one thing without affecting others
+</code></pre></div><ul>
+<li>
+<p>Also ask yourself how decoupled your design is from changes in the real world. Are you using a telephone number as a customer identifier? What happens when the phone company reassigns area codes? Don’t rely on the properties of things you can’t control</p>
+</li>
+<li>
+<p><strong>Keep your code decoupled.</strong> Write shy code . If you need to change an object’s state, get the object to do it for you.</p>
+</li>
+<li>
+<p><strong>Avoid global data (Menghindari data global).</strong> Every time your code references global data, it ties (mengikat) itself into the other components that share that data.</p>
+</li>
+<li>
+<p>In object-oriented applications, context is often passed as parameters to objects’ constructors. In other code, you can create structures containing the context and pass around references to them.</p>
+</li>
+<li>
+<p><strong>Avoid similar functions.</strong> Often you’ll come across a set of functions that all look similar—maybe they share common code at the start and end, but each has a different central algorithm.</p>
+</li>
+<li>
+<p>In fact, we suggest that every module have its own unit test built into its code, and that these tests be performed automatically as part of the regular build process</p>
+</li>
+<li>
+<p>orthogonality also applies to documentation</p>
+</li>
+<li>
+<p>Orthogonality is closely related to the DRY principle introduced on page 27</p>
+</li>
+<li>
+<p>Nothing is more dangerous than an idea if it’s the only one you have.</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">But you said we’d use database XYZ! We are 85 percen done coding the project,
+we can’t change now!” the programmer protested. Sorry, but our company
+decided to standardize on database PDQ instead—for all projects. 
+It’s out of my hands. We’ll just have to recode. 
+All of you will be working weekends until further notice
+</code></pre></div><ul>
+<li>
+<p>The analogy might be violent, but it applies to new projects, particularly when you’re building something that hasn’t been built before. Like the gunners, you’re trying to hit a target in the dark. Because your users have never seen a system like this before, their requirements may be vague. Because you may be using algorithms, techniques, languages, or libraries you aren’t familiar with, you face a large number of unknowns. And because projects take time to complete, you can pretty much guarantee the environment you’re working in will change before you’re done.</p>
+</li>
+<li>
+<p>Tracer bullets are loaded at intervals on the ammo belt alongside regular ammunition. When they’re fired, their phosphorus ignites and leaves a pyrotechnic trail from the gun to whatever they hit. If the tracers are hitting the target, then so are the regular bullets.</p>
+</li>
+<li>
+<p>What sorts of things might you choose to investigate with a prototype? Anything that carries risk. Anything that hasn’t been tried before, or that is absolutely critical to the final system. Anything unproven, experimental, or doubtful. Anything you aren’t comfortable with. You can prototype</p>
+</li>
+</ul>
+<ol>
+<li>Architecture</li>
+<li>New functionality in an existing system</li>
+<li>Structure or contents of external data</li>
+<li>Third-party tools or components</li>
+<li>Performance Issues</li>
+<li>User Interface Design</li>
+</ol>
+<ul>
+<li>
+<p>Prototyping is a learning experience. Its value lies not in the code produced, but in the lessons learned. That’s really the point of prototyping.</p>
+</li>
+<li>
+<p>When building a prototype, what details can you ignore?</p>
+</li>
+</ul>
+<ol>
+<li>Correctness. You may be able to use dummy data where appropriates</li>
+<li>The prototype may function only in a very limited sense, perhaps with only one preselected piece of input data and one menu item.</li>
+<li>Error checking is likely to be incomplete or missing entirely. If you stray from the predefined path, the prototype may crash and burn in a glorious display of pyrotechnics. That’s okay.</li>
+<li>It is painful to admit this in print, but prototype code probably doesn’t have much in the way of comments or documentation. You may produce reams of documentation as a result of your experience with the prototype, but comparatively very little on the prototype system itself.</li>
+</ol>
+<h4 id="prototype-architecture">Prototype Architecture</h4>
+<p>In fact, you may not even need to code in order to prototype architecture—you can prototype on a whiteboard, with Post-it notes or index cards. What you are looking for is how the system hangs together as a whole, again deferring details. Here are some specific areas you may want to look for in the architectural prototype:</p>
+<ol>
+<li>Are the responsibilities of the major components well defined and appropriate?</li>
+<li>Are the collaborations between major components well defined?</li>
+<li>Is coupling minimized?</li>
+<li>Can you identify potential sources of duplication?</li>
+<li>Are interface definitions and constraints acceptable?</li>
+<li>Does every module have an access path to the data it needs during execution? Does it have that access when it needs it?</li>
+</ol>
+<p>Before you embark on any code-based prototyping, make sure that everyone understands that you are writing disposable code</p>
+<p>If you are writing in the problem domain, you can also perform domain-specific validation, reporting problems in terms your users can understand.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p><b>You can't Satisfy Everyone</b></p>
+      
+      
+        ©
+        
+        2020
+         Marthin Satrya Pasaribu 
+      
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

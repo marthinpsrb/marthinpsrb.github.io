@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Marthin Satrya Pasaribu">
+    <meta name="description" content="Policy routing actually allows us a great deal of flexibility in how we direct traffic out of a Linux host. There are a couple parts involved in policy routing:
+ Policy routing tables: Routes added to the system without a routing table specified go to the main table, not the default table. Linux comes with three default.  Local (cannot be modified or default) Main Default   Policy routing rules: Linux comes with three rules, one for each of the default routing tables  When we’re trying to used policy routing for our purpose we need to do three things:">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Policy Routing - Introduction"/>
+<meta name="twitter:description" content="Policy routing actually allows us a great deal of flexibility in how we direct traffic out of a Linux host. There are a couple parts involved in policy routing:
+ Policy routing tables: Routes added to the system without a routing table specified go to the main table, not the default table. Linux comes with three default.  Local (cannot be modified or default) Main Default   Policy routing rules: Linux comes with three rules, one for each of the default routing tables  When we’re trying to used policy routing for our purpose we need to do three things:"/>
+
+    <meta property="og:title" content="Linux Policy Routing - Introduction" />
+<meta property="og:description" content="Policy routing actually allows us a great deal of flexibility in how we direct traffic out of a Linux host. There are a couple parts involved in policy routing:
+ Policy routing tables: Routes added to the system without a routing table specified go to the main table, not the default table. Linux comes with three default.  Local (cannot be modified or default) Main Default   Policy routing rules: Linux comes with three rules, one for each of the default routing tables  When we’re trying to used policy routing for our purpose we need to do three things:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://marthinpsrb.com/posts/linux-policy-routing/" />
+<meta property="article:published_time" content="2020-03-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-17T00:00:00+00:00" />
+
+
+    <title>
+  Linux Policy Routing - Introduction · Marthin Satrya Pasaribu
+</title>
+
+    
+      <link rel="canonical" href="http://marthinpsrb.com/posts/linux-policy-routing/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha512-9QjPqX/aCNwEQDyMqqMluNOSsHxTwOJNO3d4m5aUeNbyOPm8RcBA5hCUhvGmKFtSmQYGajqPopGtD60FWiWUwg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/twemoji.min.js" integrity="sha512-panBjUGuKarjg0qxHggQULmRf9jB/YVCy238hmzBWUuLeOuwMSuJgJcUv3T+rwXUBZ9zeUvc49ZcCRH+EO0H8g==" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.79.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Marthin Satrya Pasaribu
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Linux Policy Routing - Introduction</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2020-03-17T00:00:00Z'>
+                March 17, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/marthinpsrb/">marthinpsrb</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">linux</a>
+      <span class="separator">•</span>
+    <a href="/categories/technology/">technology</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Policy routing actually allows us a great deal of flexibility in how we direct traffic out of a Linux host. There are a couple parts involved in policy routing:</p>
+<ul>
+<li><strong>Policy routing tables:</strong> Routes added to the system without a routing table specified go to the main table, not the default table. Linux comes with three default.
+<ul>
+<li>Local (cannot be modified or default)</li>
+<li>Main</li>
+<li>Default</li>
+</ul>
+</li>
+<li><strong>Policy routing rules:</strong> Linux comes with three rules, one for each of the default routing tables</li>
+</ul>
+<p>When we’re trying to used policy routing for our purpose we need to do three things:</p>
+<ul>
+<li>We need to create a custom policy routing table</li>
+<li>We need to create one or more custom policy routing rules</li>
+<li>We need to populate the custom policy routing table with routes</li>
+</ul>
+<p>Now let’s try, I’m using Ubuntu on this sample:</p>
+<h4 id="creating-custom-policy-routing-table">Creating Custom Policy Routing Table</h4>
+<p>The first step is to create a custom policy routing table, each table is represented by an entry in the file <code>/etc/iproute2/rt_tables</code>. You can check using vim or nano or others tools in Linux.</p>
+<p>We will trying to create custom table  in policy routing table using this command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">echo 200 custom &gt;&gt; /etc/iproute2/rt_tables
+</code></pre></div><h5 id="creating-policy-routing-rules">Creating Policy Routing Rules</h5>
+<p>The next step is to create policy routing rules that will tell the system which table to use to determine the correct route. On this example I will use the source address (i.e., the originating address for the traffic) as the determining factor in the rule.</p>
+<p>To create the policy routing rule, use this command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">ip rule add from &lt;source address&gt; lookup &lt;table name&gt;
+</code></pre></div><p>Before we already create custom routing table, and we will set source address 192.168.30.199. It means if request is coming from that IP it means system to use the <code>custom</code> table.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">ip rule add from 192.168.39.199 lookup custom
+</code></pre></div><p>We can see all the policy routing rules that are currently in effect using this command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">ip rule list
+</code></pre></div><p>As earlier mention in this article, there are default rules that govern use of local, main, and default. That’s why once you added the rule, you will see it listed there as well.</p>
+<p>One important notes and problem. It will disappear when your system is restarted (or when the networking is restarted). But the <code>custom</code> in table route will be still there, only  in policy routing rules will be gone. To make rules persist, add this command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">post-up ip rule add from 192.168.39.199 lookup custom
+</code></pre></div><p>It will adding to <code>/etc/network/interfaces</code>. With this command, the rule should persist across reboots or across network restarts.</p>
+<h5 id="populating-the-routing-table">Populating the Routing Table</h5>
+<p>We already set the custom policy routing table and a rule defined that directs the system to use it. The last step is we need to populate the table with the correct routes. The generic command to do this is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">ip route add
+</code></pre></div><p>But with a specific table parameter added. Using our previous example, let’s say we wanted to add a default route that was specific to traffic originating from 192.168.39.199. We’ve already created a custom policy routing table, and we have a rule that directs the system to use that table for traffic originating from that address. To add a new default route specifically for that interface, you’d use this command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">ip route add default via 192.168.30.2 dev eth1 table custom
+</code></pre></div><p>Naturally, you’d want to substitute the correct default gateway for 192.168.30.2 and the correct interface for eth1 in the above command, but this should give you the right idea. Of course, you don’t have to use default routes; you could install specific routes into the custom policy routing table as well. This also works on VLAN sub-interfaces, so you could create per-VLAN routing tables. But you need to create vlan30 table on the first step:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">ip route add default via 192.168.30.2 dev eth0.30 table vlan30
+</code></pre></div><p>This command installs a default route for the 192.168.30.x interface on VLAN 30, using a table named <code>vlan30</code></p>
+<p>As with the policy routing tables, routes added this way are not persistent, so you’ll want to make them persistent by adding a line like this to your <code>/etc/network/interfaces</code> configuration file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">post-up ip route add default via 192.168.30.2 dev eth1 table custom
+</code></pre></div><p>References:</p>
+<ul>
+<li><a href="http://linux-ip.net/html/tools-ip-rule.html">http://linux-ip.net/html/tools-ip-rule.html</a></li>
+<li><a href="http://linux-ip.net/html/routing-tables.html">http://linux-ip.net/html/routing-tables.html</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p><b>You can't Satisfy Everyone</b></p>
+      
+      
+        ©
+        
+        2020
+         Marthin Satrya Pasaribu 
+      
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>
