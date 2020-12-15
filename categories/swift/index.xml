@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>swift on Marthin Satrya Pasaribu</title>
-    <link>http://marthinpsrb.com/categories/swift/</link>
+    <link>https://marthinpsrb.com/categories/swift/</link>
     <description>Recent content in swift on Marthin Satrya Pasaribu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://marthinpsrb.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://marthinpsrb.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copy On Write (COW) in SWIFT</title>
-      <link>http://marthinpsrb.com/posts/copy-on-write-cow-in-swift/</link>
+      <link>https://marthinpsrb.com/posts/copy-on-write-cow-in-swift/</link>
       <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/copy-on-write-cow-in-swift/</guid>
+      <guid>https://marthinpsrb.com/posts/copy-on-write-cow-in-swift/</guid>
       <description>What is Copy on Write?  Copy on Write (CoW or COW), sometimes referred to as implicit sharing or shadowing is a resource-management technique used in computer programming to efficiently implement a “duplicate” or “copy” operation on modifiable resources. If a resource duplicated but not modified it is not necessary to create a new resource. The resource can be shared between the copy and the original. Source: Wikipedia
  Copy on write is a common computing technique that helps increase performance when copying structures.</description>
     </item>
     
     <item>
       <title>Protocol Why you’re important??</title>
-      <link>http://marthinpsrb.com/posts/protocol-why-youre-really-important/</link>
+      <link>https://marthinpsrb.com/posts/protocol-why-youre-really-important/</link>
       <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/protocol-why-youre-really-important/</guid>
+      <guid>https://marthinpsrb.com/posts/protocol-why-youre-really-important/</guid>
       <description>This is only short blog, why we need protocol(Swift) – Interface(Java). It’s just come to my mind suddenly:
 First what’s the protocol in Swift?
  A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality
@@ -34,10 +34,10 @@ To answer this question, I find one example that I think it can describe why we 
     
     <item>
       <title>Delegate Pattern on iOS Swift</title>
-      <link>http://marthinpsrb.com/posts/delegate-pattern-on-ios-swift/</link>
+      <link>https://marthinpsrb.com/posts/delegate-pattern-on-ios-swift/</link>
       <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/delegate-pattern-on-ios-swift/</guid>
+      <guid>https://marthinpsrb.com/posts/delegate-pattern-on-ios-swift/</guid>
       <description>Before you read this article, it’s mandatory to you understand protocol.
 Delegate pattern can help you to handle the same task to a different module. Let’s say you build an app, but you want to track or write logging of the user and insert it to local storage. Delegate pattern can help you to make it easily and not redundant.
 The main benefit of delegating certain decisions and behaviors to a type’s owner is that it becomes much easier to support multiple use cases without having to create massive types that themselves need to account for all those use cases.</description>
@@ -45,30 +45,30 @@ The main benefit of delegating certain decisions and behaviors to a type’s own
     
     <item>
       <title>Protocol in Swift</title>
-      <link>http://marthinpsrb.com/posts/protocol-in-swift/</link>
+      <link>https://marthinpsrb.com/posts/protocol-in-swift/</link>
       <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/protocol-in-swift/</guid>
+      <guid>https://marthinpsrb.com/posts/protocol-in-swift/</guid>
       <description>What is Protocol?  According to Apple Documentation–
   A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can then be adopted by a class, structure, or enumeration to provide an actual implementation of those requirements. Any type that satisfies the requirements of a protocol is said to conform to that protocol. In addition to specifying requirements that conforming types must implement, you can extend a protocol to implement some of these requirements or to implement additional functionality that conforming types can take advantage of.</description>
     </item>
     
     <item>
       <title>Architecture Pattern – Clean Architecture</title>
-      <link>http://marthinpsrb.com/posts/architecture-pattern-clean-architecture/</link>
+      <link>https://marthinpsrb.com/posts/architecture-pattern-clean-architecture/</link>
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/architecture-pattern-clean-architecture/</guid>
+      <guid>https://marthinpsrb.com/posts/architecture-pattern-clean-architecture/</guid>
       <description>Architecture Pattern:  Reusable solution A “pattern” has been defined as: “an idea that has been useful in one practical context and will probably be useful in others Help to easy to test the code  Good Architecture? What is it? Good Architecture:
  A balanced distribution of responsibilities for all entity and specific roles Testability, it means the code easy and can be tested Ease of use, and a low maintenance cost  By Uncle Bob:</description>
     </item>
     
     <item>
       <title>How to Learn Swift ?</title>
-      <link>http://marthinpsrb.com/posts/how-to-learn-swift/</link>
+      <link>https://marthinpsrb.com/posts/how-to-learn-swift/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/how-to-learn-swift/</guid>
+      <guid>https://marthinpsrb.com/posts/how-to-learn-swift/</guid>
       <description>Source: https://www.pinterest.com/pin/323766660691724412/
   Swift was released in 2014 as open-source language. I started learning Swift around 2 weeks ago. There are a lot of ways to go about learning Swift, and the lesson can be done on your own time.
 New Programming language, it means a new experience. For me, most of them have the same concept but have a different approach. Like in Java for collection type they have Array, HashMap, LinkedList, ArrayList, etc.</description>

@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on Marthin Satrya Pasaribu</title>
-    <link>http://marthinpsrb.com/categories/linux/</link>
+    <link>https://marthinpsrb.com/categories/linux/</link>
     <description>Recent content in linux on Marthin Satrya Pasaribu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://marthinpsrb.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://marthinpsrb.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Policy Routing - Introduction</title>
-      <link>http://marthinpsrb.com/posts/linux-policy-routing/</link>
+      <link>https://marthinpsrb.com/posts/linux-policy-routing/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/linux-policy-routing/</guid>
+      <guid>https://marthinpsrb.com/posts/linux-policy-routing/</guid>
       <description>Policy routing actually allows us a great deal of flexibility in how we direct traffic out of a Linux host. There are a couple parts involved in policy routing:
  Policy routing tables: Routes added to the system without a routing table specified go to the main table, not the default table. Linux comes with three default.  Local (cannot be modified or default) Main Default   Policy routing rules: Linux comes with three rules, one for each of the default routing tables  When we’re trying to used policy routing for our purpose we need to do three things:</description>
     </item>
     
     <item>
       <title>Linux Introduction</title>
-      <link>http://marthinpsrb.com/posts/linux-introduction/</link>
+      <link>https://marthinpsrb.com/posts/linux-introduction/</link>
       <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/linux-introduction/</guid>
+      <guid>https://marthinpsrb.com/posts/linux-introduction/</guid>
       <description>Linux is a computer operating system. An operating system consists of the software that manages your computer and lets you run application on it. The features that make up Linux and similar computer operating systems include the following.
  Detecting and preparing hardware  When you turn on your computer, the Linux system will boot up and loads the software (drivers and modules) needed to access those particular hardware devices.</description>
     </item>

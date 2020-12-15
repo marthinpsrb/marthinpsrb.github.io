@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Snippets on Marthin Satrya Pasaribu</title>
-    <link>http://marthinpsrb.com/snippets/</link>
+    <link>https://marthinpsrb.com/snippets/</link>
     <description>Recent content in Snippets on Marthin Satrya Pasaribu</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://marthinpsrb.com/snippets/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://marthinpsrb.com/snippets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First snippet</title>
-      <link>http://marthinpsrb.com/snippets/first/</link>
+      <link>https://marthinpsrb.com/snippets/first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/snippets/first/</guid>
+      <guid>https://marthinpsrb.com/snippets/first/</guid>
       <description>This content is in snippets/first/index.md
 pwd </description>
     </item>
     
     <item>
       <title>Second snippet</title>
-      <link>http://marthinpsrb.com/snippets/second/</link>
+      <link>https://marthinpsrb.com/snippets/second/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/snippets/second/</guid>
+      <guid>https://marthinpsrb.com/snippets/second/</guid>
       <description>This content is in snippets/second/index.md
 ls -la </description>
     </item>

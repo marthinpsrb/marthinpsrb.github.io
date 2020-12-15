@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ubuntu on Marthin Satrya Pasaribu</title>
-    <link>http://marthinpsrb.com/categories/ubuntu/</link>
+    <link>https://marthinpsrb.com/categories/ubuntu/</link>
     <description>Recent content in ubuntu on Marthin Satrya Pasaribu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://marthinpsrb.com/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://marthinpsrb.com/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to solve cannot access root Ubuntu Server</title>
-      <link>http://marthinpsrb.com/posts/how-to-solve-cannot-access-root-ubuntu-server/</link>
+      <link>https://marthinpsrb.com/posts/how-to-solve-cannot-access-root-ubuntu-server/</link>
       <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://marthinpsrb.com/posts/how-to-solve-cannot-access-root-ubuntu-server/</guid>
+      <guid>https://marthinpsrb.com/posts/how-to-solve-cannot-access-root-ubuntu-server/</guid>
       <description> masuk recovery chown root:root /usr/bin/sudo &amp;amp;&amp;amp; chmod 4755 /usr/bin/sudo untuk perbaiki sudo chmod 644 /usr/lib/sudo/sudoers.so chown -R root /usr/lib/sudo chown root:root /etc/sudoers chmod 0440 /etc/sudoers adduser adminapibkkbn sudo (reboot ke hard drive) sudo apt-get remove –purge openssh-server &amp;amp;&amp;amp; sudo apt-get install openssh-server  </description>
     </item>
     
